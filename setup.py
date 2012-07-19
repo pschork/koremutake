@@ -20,7 +20,7 @@ setup(name='koremutake',
       author_email = 'patrick@schork.com',
       maintainer = 'Patrick Schork',
       maintainer_email = 'patrick@schork.com',
-      url = 'http://bitbucket.org/pschork/koremutake',
+      url = 'http://github.com/pschork/koremutake'
       license = 'BSD',
       test_suite = 'test',
     )
