@@ -1,3 +1,2 @@
 include ez_setup.py
 include LICENSE
-include test/__ini__.py
