@@ -37,11 +37,11 @@ def encode(value):
         raise ValueError('Encode value must be a positive integer')
     if value == 0:
         return phonemes[0]
+    (keys, plen) = ([], len(phonemes))
     while value > 0:
-        digit = value % len(phonemes)
-        key = phonemes[digit] + key
-        value /= len(phonemes)
-    return key
+        (value, digit) = divmod(value, plen)
+        keys.insert(0, phonemes[digit])
+    return ''.join(keys)
 
 def decode(value):
     "Decode Koremutake string to unsigned integer value"
