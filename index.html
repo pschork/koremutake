@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Koremutake : Convert to and from Koremutake Memorable Random Strings in Python " />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Koremutake</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/pschork/koremutake">View on GitHub</a>
+
+          <h1 id="project_title">Koremutake</h1>
+          <h2 id="project_tagline">Convert to and from Koremutake Memorable Random Strings in Python </h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/pschork/koremutake/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/pschork/koremutake/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+    </div>
+
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>Python Koremutake</h1>
+
+<p>Convert to and from Koremutake Memorable Random Strings.</p>
+
+<p>Koremutake is a 128bit MeRS encoding algorithm that can convert any large, 
+unsigned number into a memorable sequence of phonetically unique syllables.</p>
+
+<p>For details see <a href="http://shorl.com/koremutake.php">http://shorl.com/koremutake.php</a></p>
+
+<p>To install, run 'sudo easy_install koremutake'</p>
+
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="kn">import</span> <span class="nn">koremutake</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">koremutake</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="mi">10610353957</span><span class="p">)</span>
+<span class="s">'koremutake'</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">koremutake</span><span class="o">.</span><span class="n">decode</span><span class="p">(</span><span class="s">'koremutake'</span><span class="p">)</span>
+<span class="mi">10610353957</span>
+</pre></div>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Koremutake maintained by <a href="https://github.com/pschork">pschork</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
