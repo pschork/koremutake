@@ -1,9 +1,6 @@
-from ez_setup import use_setuptools
-use_setuptools()
-
 from setuptools import setup, find_packages
 
-version = '1.0.5'
+version = '1.1.0'
 short_desc = "Convert to and from Koremutake Memorable Random Strings"
 long_desc = """Koremutake is a 128bit MeRS encoding algorithm that can convert any large, 
 unsigned number into a memorable sequence of phonetically unique syllables.
