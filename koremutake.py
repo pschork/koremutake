@@ -12,7 +12,17 @@ See http://shorl.com/koremutake.php for details
 >>> koremutake.decode('koremutake')
 10610353957
 """
-import unittest
+from __future__ import unicode_literals
+try:
+    import unittest2 as unittest
+except ImportError:
+    import unittest
+
+try:
+    int = long
+except NameError:
+    pass
+
 
 __author__ = 'Patrick Schork <patrick@schork.com>'
 
@@ -46,7 +56,7 @@ def encode(value):
 def decode(value):
     "Decode Koremutake string to unsigned integer value"
     orig = value
-    x=long(0)
+    x=int(0)
     while value:
         if value[:2] in phonemes:
             bit,value = value[:2],value[2:]
